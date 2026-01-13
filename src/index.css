@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa toda la pantalla */
+}
+
+main {
+  flex: 1; /* hace que main ocupe el espacio restante */
+}
+
+header, footer {
+  width: 100%;
+  background-color: #1a202c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
